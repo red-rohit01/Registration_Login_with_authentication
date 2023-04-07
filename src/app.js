@@ -153,17 +153,17 @@ app.post("/login", async(req,res)=>{
 //     const passwordmatch = await bcrypt.compare(password,hashpassword);
 
 // }
-// securePassword("thapa@123");
+// securePassword("pass@123");
 
 //  JSON WebToken:
 
 // const jwt=require("jsonwebtoken");
 // const createToken = async()=>{
-//     const token = await jwt.sign({id: "5treuretweriwerjwe"},"mynameisrohitkumarandiamacompetitiveprogrammer",
+//     const token = await jwt.sign({id: "5treuretweriwerjwe"},process.env.SECRET_KEY,
 //     {expiresIn : "2 minutes"}
 //     );
 
-//     const userverification = await jwt.verify(token, "mynameisrohitkumarandiamacompetitiveprogrammer");
+//     const userverification = await jwt.verify(token, process.env.SECRET_KEY);
 // }
 // createToken();
 
