@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+            
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+
+      :root{
+    --main-bg: #1e272e;
+    --main-color: #0097e6;
+    }
+
+html{
+    font-size: 62.5% ;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-around;
+}
+
+.navbar li{
+    margin-left: 2rem;
+}
+
+.navbar a{
+    font-size: 1.8rem;
+}
+      .navbar{
+      color: #fff;
+      background-color: var(--main-bg);
+      padding-left: 5rem;
+      padding-right:5rem;
+    }
+    .navbar a:hover{
+    color: var(--main-color);
+}
+
+ .main_header_left {
+     height: 70rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: flex-start;
+     padding-left: 5rem;
+}
+
+.main_header_left p{
+    font-size: 2rem;
+}
+
+.main_header_left h1{
+    font-size: 4rem;
+    margin: 1rem 0 4rem 0;
+    text-transform: capitalize;
+}
+
+.main_header_left .text_clr{
+    color: var(--main-color);
+}
+
+.main_header_left button{
+    border: none;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    box-shadow: 0 8px 6px -6px #000;
+    outline: node;
+}
+
+.main_header_left button:hover{
+    box-shadow: 0 8px 6px -6px var(--main-color);
+}
+
+.main_header_right {
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+
+    </style>
+</head>
+<body>
+       <div class="container-fluid main_menu">
+        <div class="row">
+            <!-- <div class="col-md-10 col-12 ">  -->
+              <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="/"><i class="fa-sharp fa-solid fa-snowflake"></i>Home<i class="fa-sharp fa-solid fa-snowflake"></i></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/register">Register</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/contact">About</a>
+                      </li>
+                    </ul>  
+                  </div>
+                </div>
+              </nav>
+            <!-- </div> -->
+        </div>
+    </div>
+    <!-- main page -->
+    <div class="container-fluid main_header">
+      <div class="row rk">
+          <!-- <div class="col-md-10 col-12 ms-auto"> -->
+        
+            <div class="col-md-6 col-12 ms-auto main_header_right align-items-center">
+                <figure>
+                    <img src="images/Rohit Circular pic.png" alt="Developer image" class="img-fluid" title="Rohit">
+                </figure>
+            </div>
+
+             <div class="col-md-6 col-12 main_header_left">
+                <p>Welcome to the about Page</p>
+                <h1>I am a <span class="text_clr">MERN stack Developer</span> And a <span class="text_clr">Competitive Coder</span></h1>
+                <a href="https://www.linkedin.com/in/rohit-kumar-77173a22a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BzSn7Vc0aQYmyoV9QrKf9Xw%3D%3D"> <button>LinkedIN</button></a>
+             </div>
+        <!-- </div> -->
+      </div>    
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

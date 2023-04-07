@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerlinks}}
+</head>
+<style>
+    body {
+        background-image: url("images/1.jpg");
+    }
+</style>
+
+<body>
+    {{>navbar}}
+    <div class="box">
+        <div class="container">
+
+            <div class="top">
+                <span>Have an account?</span>
+                <header>Login</header>
+            </div>
+            <form action="/login" method="POST">
+                <div class="input-field">
+                    <input type="email" class="input" placeholder="Username" name="email" required>
+                    <i class='bx bx-user'></i>
+                </div>
+
+                <div class="input-field">
+                    <input type="Password" class="input" placeholder="Password" name="password" required>
+                    <i class='bx bx-lock-alt'></i>
+                </div>
+
+                <div class="input-field">
+                    <input type="submit" class="submit" value="Login" id="">
+                </div>
+
+                <div class="two-col">
+                    <div class="one">
+                        <input type="checkbox" name="" id="check">
+                        <label for="check"> Remember Me</label>
+                    </div>
+                    <div class="two">
+                        <label><a href="#">Forgot password?</a></label>
+                    </div>
+                </div>
+            </form>
+                <span>New to Login Page</span>
+                <div class="sign-up">
+
+                    <a href="/register"><button class="rk">SignUp</button></a>   
+                </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
